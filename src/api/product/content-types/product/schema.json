@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -25,39 +25,6 @@
         "images"
       ]
     },
-    "texture": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::texture.texture",
-      "inversedBy": "products"
-    },
-    "quality": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::quality.quality",
-      "inversedBy": "products"
-    },
-    "Colors": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "Lengths": {
-      "type": "richtext",
-      "required": true
-    },
-    "standards": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::standard.standard",
-      "inversedBy": "products"
-    },
     "PricePerBundle": {
       "type": "decimal"
     },
@@ -70,11 +37,48 @@
       "default": true,
       "required": true
     },
-    "category2": {
+    "Colors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.color",
+      "required": true,
+      "min": 1
+    },
+    "Category2": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category2.category2",
-      "inversedBy": "products"
+      "inversedBy": "Products"
+    },
+    "Feedbacks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::feedback.feedback",
+      "mappedBy": "Product"
+    },
+    "Lengths": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::length.length",
+      "mappedBy": "Products"
+    },
+    "Quality": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quality.quality",
+      "inversedBy": "Products"
+    },
+    "Standards": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::standard.standard",
+      "mappedBy": "Products"
+    },
+    "Texture": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::texture.texture",
+      "inversedBy": "Products"
     }
   }
 }

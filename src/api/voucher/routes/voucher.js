@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * cover router
+ * voucher router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::cover.cover');
+module.exports = createCoreRouter('api::voucher.voucher');

@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -22,11 +22,11 @@
       "required": true,
       "default": true
     },
-    "products": {
+    "Products": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
-      "mappedBy": "texture"
+      "mappedBy": "Texture"
     }
   }
 }

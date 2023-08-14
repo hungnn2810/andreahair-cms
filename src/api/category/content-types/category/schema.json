@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -22,11 +22,11 @@
       "default": true,
       "required": true
     },
-    "category2s": {
+    "Category2s": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category2.category2",
-      "mappedBy": "category"
+      "mappedBy": "Category"
     }
   }
 }

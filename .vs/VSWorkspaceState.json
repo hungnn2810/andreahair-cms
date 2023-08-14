@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\api",
+    "\\src\\api\\category",
+    "\\src\\api\\category\\content-types",
+    "\\src\\api\\category\\content-types\\category",
+    "\\src\\api\\category\\controllers",
+    "\\src\\api\\category\\documentation",
+    "\\src\\api\\category\\documentation\\1.0.0",
+    "\\src\\api\\category\\routes",
+    "\\src\\api\\category\\services"
+  ],
+  "SelectedNode": "\\src\\api\\category\\services",
+  "PreviewInSolutionExplorer": false
+}

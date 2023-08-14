@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * cover controller
+ * banner controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::cover.cover');
+module.exports = createCoreController('api::banner.banner');

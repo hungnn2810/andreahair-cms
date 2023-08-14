@@ -1,5 +1,5 @@
 {
-  "/covers": {
+  "/vouchers": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CoverListResponse"
+                "$ref": "#/components/schemas/VoucherListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Cover"
+        "Voucher"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/covers"
+      "operationId": "get/vouchers"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CoverResponse"
+                "$ref": "#/components/schemas/VoucherResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Cover"
+        "Voucher"
       ],
       "parameters": [],
-      "operationId": "post/covers",
+      "operationId": "post/vouchers",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/CoverRequest"
+              "$ref": "#/components/schemas/VoucherRequest"
             }
           }
         }
       }
     }
   },
-  "/covers/{id}": {
+  "/vouchers/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CoverResponse"
+                "$ref": "#/components/schemas/VoucherResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Cover"
+        "Voucher"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/covers/{id}"
+      "operationId": "get/vouchers/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CoverResponse"
+                "$ref": "#/components/schemas/VoucherResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Cover"
+        "Voucher"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/covers/{id}",
+      "operationId": "put/vouchers/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/CoverRequest"
+              "$ref": "#/components/schemas/VoucherRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Cover"
+        "Voucher"
       ],
       "parameters": [
         {
@@ -501,7 +501,7 @@
           }
         }
       ],
-      "operationId": "delete/covers/{id}"
+      "operationId": "delete/vouchers/{id}"
     }
   }
 }
