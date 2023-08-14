@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qualities",
+  "info": {
+    "singularName": "quality",
+    "pluralName": "qualities",
+    "displayName": "Quality"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "default": "Name",
+      "unique": true
+    },
+    "Enable": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "quality"
+    }
+  }
+}

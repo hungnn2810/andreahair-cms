@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "standards",
+  "info": {
+    "singularName": "standard",
+    "pluralName": "standards",
+    "displayName": "Standard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Enable": {
+      "pluginOptions": {},
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "standards"
+    }
+  }
+}

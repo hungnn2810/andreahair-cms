@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category2s",
+  "info": {
+    "singularName": "category2",
+    "pluralName": "category2s",
+    "displayName": "Category2",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Enable": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "category2s"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "category2"
+    }
+  }
+}

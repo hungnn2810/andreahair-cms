@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salesmen",
+  "info": {
+    "singularName": "salesman",
+    "pluralName": "salesmen",
+    "displayName": "Salesman",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FullName": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Avatar": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "PhoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "Facebook": {
+      "type": "string",
+      "required": true
+    },
+    "Instagram": {
+      "type": "string",
+      "required": true
+    },
+    "WhatsApp": {
+      "type": "string",
+      "required": true
+    },
+    "Enabled": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

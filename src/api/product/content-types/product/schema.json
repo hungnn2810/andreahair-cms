@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "texture": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::texture.texture",
+      "inversedBy": "products"
+    },
+    "quality": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quality.quality",
+      "inversedBy": "products"
+    },
+    "Colors": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Lengths": {
+      "type": "richtext",
+      "required": true
+    },
+    "standards": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::standard.standard",
+      "inversedBy": "products"
+    },
+    "PricePerBundle": {
+      "type": "decimal"
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Enable": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "category2": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category2.category2",
+      "inversedBy": "products"
+    }
+  }
+}
