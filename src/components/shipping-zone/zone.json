@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_zone_zones",
+  "info": {
+    "displayName": "DHL",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

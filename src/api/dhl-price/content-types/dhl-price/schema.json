@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dhl_prices",
+  "info": {
+    "singularName": "dhl-price",
+    "pluralName": "dhl-prices",
+    "displayName": "DHL-Price",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Zone": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dhl-zone.dhl-zone",
+      "inversedBy": "dhl_price"
+    },
+    "PriceOfWeight": {
+      "type": "component",
+      "repeatable": true,
+      "required": true,
+      "component": "shipping-price.price"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shipping_fedex_prices",
+  "info": {
+    "displayName": "Fedex",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "WeightInKg": {
+      "type": "decimal",
+      "required": true,
+      "unique": true
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

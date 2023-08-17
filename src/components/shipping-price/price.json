@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shipping_prices",
+  "info": {
+    "displayName": "DHL",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "WeightInKg": {
+      "type": "decimal",
+      "required": true,
+      "unique": true
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true,
+      "unique": false
+    }
+  }
+}

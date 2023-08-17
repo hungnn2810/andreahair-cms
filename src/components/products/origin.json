@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_products_origins",
+  "info": {
+    "displayName": "Origin"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

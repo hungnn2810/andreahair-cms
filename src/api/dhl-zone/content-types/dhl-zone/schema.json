@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dhl_zones",
+  "info": {
+    "singularName": "dhl-zone",
+    "pluralName": "dhl-zones",
+    "displayName": "DHL-Zone",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ZoneCode": {
+      "type": "string",
+      "required": true
+    },
+    "CountriesAndTerritories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shipping-zone.zone",
+      "required": true
+    },
+    "dhl_price": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dhl-price.dhl-price",
+      "mappedBy": "Zone"
+    }
+  }
+}

@@ -57,28 +57,29 @@
       "mappedBy": "Product"
     },
     "Lengths": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::length.length",
-      "mappedBy": "Products"
-    },
-    "Quality": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::quality.quality",
-      "inversedBy": "Products"
-    },
-    "Standards": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::standard.standard",
-      "mappedBy": "Products"
+      "type": "component",
+      "repeatable": true,
+      "component": "products.length"
     },
     "Texture": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::texture.texture",
-      "inversedBy": "Products"
+      "type": "component",
+      "repeatable": false,
+      "component": "products.texture"
+    },
+    "Quality": {
+      "type": "component",
+      "repeatable": false,
+      "component": "products.quality"
+    },
+    "Origin": {
+      "type": "component",
+      "repeatable": false,
+      "component": "products.origin"
+    },
+    "Standards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.standard"
     }
   }
 }

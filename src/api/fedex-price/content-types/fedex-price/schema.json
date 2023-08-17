@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fedex_prices",
+  "info": {
+    "singularName": "fedex-price",
+    "pluralName": "fedex-prices",
+    "displayName": "Fedex-Price",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Zone": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fedex-zone.fedex-zone",
+      "inversedBy": "fedex_price"
+    },
+    "PriceOfWeight": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shipping-price.fedex-price"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fedex_zones",
+  "info": {
+    "singularName": "fedex-zone",
+    "pluralName": "fedex-zones",
+    "displayName": "Fedex-Zone"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ZoneCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "CountriesAndTerritories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shipping-zone.fedex-zone",
+      "required": true
+    },
+    "fedex_price": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fedex-price.fedex-price",
+      "mappedBy": "Zone"
+    }
+  }
+}

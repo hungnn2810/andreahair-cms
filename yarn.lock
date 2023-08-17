@@ -1286,23 +1286,6 @@
     react-query "3.39.3"
     react-select "5.7.0"
 
-"@strapi/helper-plugin@4.12.4":
-  version "4.12.4"
-  resolved "https://registry.npmjs.org/@strapi/helper-plugin/-/helper-plugin-4.12.4.tgz"
-  integrity sha512-tcapwzrtzkFxNPcajqiZzHm8qiJ6mgZycUfleBWXavZGpw0qKGgwJ3jqaiSS4VAEnQFNS7+FUYBYZMlsF2Q6MQ==
-  dependencies:
-    axios "1.4.0"
-    date-fns "2.30.0"
-    formik "2.4.0"
-    immer "9.0.19"
-    lodash "4.17.21"
-    prop-types "^15.8.1"
-    qs "6.11.1"
-    react-helmet "^6.1.0"
-    react-intl "6.4.1"
-    react-query "3.39.3"
-    react-select "5.7.0"
-
 "@strapi/icons@1.8.2", "@strapi/icons@^1.6.6":
   version "1.8.2"
   resolved "https://registry.npmjs.org/@strapi/icons/-/icons-1.8.2.tgz"
@@ -1359,15 +1342,15 @@
     reselect "4.1.7"
     yup "0.32.9"
 
-"@strapi/plugin-documentation@^4.12.4":
-  version "4.12.4"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-documentation/-/plugin-documentation-4.12.4.tgz#c2496725b2af9696227275c6f6a6d78b86e1cdf4"
-  integrity sha512-zac9QF9iTuAAkPtutwUUD1JbG/zelGmIwyRRSfmmxoymOBla1lf8GXQerYrZZJ8WOSqZVBmwn+DU8FEoCVupXw==
+"@strapi/plugin-documentation@4.12.1":
+  version "4.12.1"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-documentation/-/plugin-documentation-4.12.1.tgz#626ef38cbeb0e0c0f8ae195efd76e2ad91241462"
+  integrity sha512-A9G/sj8HsdHY1wuwM6SexvptW5dE+U9GddXNPBxa5HkufqjD/XmQ0hfGglJmKFk5+bPqye/4Y6ctWnw6JUinyw==
   dependencies:
     "@strapi/design-system" "1.8.2"
-    "@strapi/helper-plugin" "4.12.4"
+    "@strapi/helper-plugin" "4.12.1"
     "@strapi/icons" "1.8.2"
-    "@strapi/utils" "4.12.4"
+    "@strapi/utils" "4.12.1"
     bcryptjs "2.4.3"
     cheerio "^1.0.0-rc.12"
     formik "2.4.0"
@@ -1599,18 +1582,6 @@
   version "4.12.1"
   resolved "https://registry.npmjs.org/@strapi/utils/-/utils-4.12.1.tgz"
   integrity sha512-y72JjH/6JgPK2k8Wq6z0jQS391YHAWa+7eDfV8cTWgjE6oxQsCPcfwO9aX7wQo8hWpIsizvBottrJQccYbJsoA==
-  dependencies:
-    "@sindresorhus/slugify" "1.1.0"
-    date-fns "2.30.0"
-    http-errors "1.8.1"
-    lodash "4.17.21"
-    p-map "4.0.0"
-    yup "0.32.9"
-
-"@strapi/utils@4.12.4":
-  version "4.12.4"
-  resolved "https://registry.npmjs.org/@strapi/utils/-/utils-4.12.4.tgz"
-  integrity sha512-PbnoECaQSyKWq83+lwukc+VB0lolUySvUUyKOO+FYbzJPQVgbPXu1F2mslgGaXseo8X/QfhfTiirXD2UM3MagA==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.30.0"

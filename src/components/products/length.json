@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_products_lengths",
+  "info": {
+    "displayName": "Length"
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

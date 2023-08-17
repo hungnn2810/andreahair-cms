@@ -1,3 +1,5 @@
+import favicon from "./extensions/favicon.ico";
+
 const config = {
   locales: [
     // 'ar',
@@ -33,6 +35,7 @@ const bootstrap = (app) => {};
 
 export default {
   config: {
+    head: { favicon: favicon },
     translations: {
       en: {
         "Auth.form.welcome.title": "Andreahair Admin!",

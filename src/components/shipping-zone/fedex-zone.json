@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_zone_fedex_zones",
+  "info": {
+    "displayName": "Fedex",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}
