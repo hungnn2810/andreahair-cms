@@ -12,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "Discount": {
+    "discount": {
       "type": "decimal",
       "required": true
     },
-    "Picture": {
+    "picture": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -28,7 +28,7 @@
         "images"
       ]
     },
-    "Enable": {
+    "enable": {
       "type": "boolean",
       "default": true,
       "required": true

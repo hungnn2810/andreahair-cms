@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "ZoneCode": {
+    "zoneCode": {
       "type": "string",
       "required": true
     },
-    "CountriesAndTerritories": {
+    "countriesAndTerritories": {
       "type": "component",
       "repeatable": true,
       "component": "shipping-zone.zone",
@@ -26,7 +26,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::dhl-price.dhl-price",
-      "mappedBy": "Zone"
+      "mappedBy": "zone"
     }
   }
 }

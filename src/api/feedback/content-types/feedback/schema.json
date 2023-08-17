@@ -12,29 +12,29 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "Email": {
+    "email": {
       "type": "email",
       "required": true
     },
-    "Rating": {
+    "rating": {
       "type": "integer",
       "min": 1,
       "max": 5,
       "default": 5,
       "required": true
     },
-    "Comment": {
+    "comment": {
       "type": "text"
     },
-    "Product": {
+    "product": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::product.product",
-      "inversedBy": "Feedbacks"
+      "inversedBy": "feedbacks"
     }
   }
 }

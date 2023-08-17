@@ -12,12 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Images": {
+    "images": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -25,61 +25,24 @@
         "images"
       ]
     },
-    "PricePerBundle": {
+    "pricePerBundle": {
       "type": "decimal"
     },
-    "Description": {
+    "description": {
       "type": "richtext",
       "required": true
     },
-    "Enable": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "Colors": {
-      "type": "component",
-      "repeatable": true,
-      "component": "products.color",
-      "required": true,
-      "min": 1
-    },
-    "Category2": {
+    "category2": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category2.category2",
-      "inversedBy": "Products"
+      "inversedBy": "products"
     },
-    "Feedbacks": {
+    "feedbacks": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::feedback.feedback",
-      "mappedBy": "Product"
-    },
-    "Lengths": {
-      "type": "component",
-      "repeatable": true,
-      "component": "products.length"
-    },
-    "Texture": {
-      "type": "component",
-      "repeatable": false,
-      "component": "products.texture"
-    },
-    "Quality": {
-      "type": "component",
-      "repeatable": false,
-      "component": "products.quality"
-    },
-    "Origin": {
-      "type": "component",
-      "repeatable": false,
-      "component": "products.origin"
-    },
-    "Standards": {
-      "type": "component",
-      "repeatable": true,
-      "component": "products.standard"
+      "mappedBy": "product"
     }
   }
 }

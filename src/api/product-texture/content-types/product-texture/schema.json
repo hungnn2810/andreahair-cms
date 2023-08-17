@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_textures",
+  "info": {
+    "singularName": "product-texture",
+    "pluralName": "product-textures",
+    "displayName": "Product-Texture",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}

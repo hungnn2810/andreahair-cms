@@ -12,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "FullName": {
+    "fullName": {
       "type": "string",
       "required": true
     },
-    "Email": {
+    "email": {
       "type": "email",
       "required": true
     },
-    "Avatar": {
+    "avatar": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -28,23 +28,23 @@
         "images"
       ]
     },
-    "PhoneNumber": {
+    "phoneNumber": {
       "type": "string",
       "required": true
     },
-    "Facebook": {
+    "facebook": {
       "type": "string",
       "required": true
     },
-    "Instagram": {
+    "instagram": {
       "type": "string",
       "required": true
     },
-    "WhatsApp": {
+    "whatsApp": {
       "type": "string",
       "required": true
     },
-    "Enabled": {
+    "enable": {
       "type": "boolean",
       "default": true,
       "required": true

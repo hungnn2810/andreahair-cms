@@ -12,21 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "unique": true,
       "required": true
     },
-    "Enable": {
+    "enable": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "Category2s": {
+    "category2s": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category2.category2",
-      "mappedBy": "Category"
+      "mappedBy": "category"
     }
   }
 }

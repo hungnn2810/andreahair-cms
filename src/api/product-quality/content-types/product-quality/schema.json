@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_qualities",
+  "info": {
+    "singularName": "product-quality",
+    "pluralName": "product-qualities",
+    "displayName": "Product-Quality"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

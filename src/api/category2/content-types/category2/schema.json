@@ -12,27 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Enable": {
+    "enable": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "Products": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product.product",
-      "mappedBy": "Category2"
-    },
-    "Category": {
+    "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "Category2s"
+      "inversedBy": "category2s"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "category2"
     }
   }
 }

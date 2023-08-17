@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Zone": {
+    "zone": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::dhl-zone.dhl-zone",
       "inversedBy": "dhl_price"
     },
-    "PriceOfWeight": {
+    "priceOfWeight": {
       "type": "component",
       "repeatable": true,
       "required": true,

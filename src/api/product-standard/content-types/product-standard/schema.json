@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_standards",
+  "info": {
+    "singularName": "product-standard",
+    "pluralName": "product-standards",
+    "displayName": "Product-Standard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}
