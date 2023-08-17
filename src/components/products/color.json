@@ -6,21 +6,17 @@
   },
   "options": {},
   "attributes": {
-    "Name": {
+    "code": {
       "type": "string",
-      "required": true
-    },
-    "Picture": {
-      "type": "media",
-      "multiple": false,
       "required": true,
+      "unique": true
+    },
+    "image": {
       "allowedTypes": [
         "images"
-      ]
-    },
-    "Enable": {
-      "type": "boolean",
-      "default": true,
+      ],
+      "type": "media",
+      "multiple": false,
       "required": true
     }
   }

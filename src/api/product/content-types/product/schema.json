@@ -43,6 +43,39 @@
       "relation": "oneToMany",
       "target": "api::feedback.feedback",
       "mappedBy": "product"
+    },
+    "colors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.color",
+      "required": true
+    },
+    "product_lengths": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-length.product-length",
+      "inversedBy": "products"
+    },
+    "product_quality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-quality.product-quality"
+    },
+    "product_standards": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-standard.product-standard",
+      "inversedBy": "products"
+    },
+    "product_texture": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-texture.product-texture"
+    },
+    "product_origin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-origin.product-origin"
     }
   }
 }

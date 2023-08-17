@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_origins",
+  "info": {
+    "singularName": "product-origin",
+    "pluralName": "product-origins",
+    "displayName": "Product-Origin"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
