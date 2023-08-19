@@ -3,15 +3,14 @@
     "",
     "\\src",
     "\\src\\api",
-    "\\src\\api\\category",
-    "\\src\\api\\category\\content-types",
-    "\\src\\api\\category\\content-types\\category",
-    "\\src\\api\\category\\controllers",
-    "\\src\\api\\category\\documentation",
-    "\\src\\api\\category\\documentation\\1.0.0",
-    "\\src\\api\\category\\routes",
-    "\\src\\api\\category\\services"
+    "\\src\\api\\product\\content-types",
+    "\\src\\api\\product\\content-types\\product",
+    "\\src\\api\\product\\controllers",
+    "\\src\\api\\product\\documentation",
+    "\\src\\api\\product\\documentation\\1.0.0",
+    "\\src\\api\\product\\routes",
+    "\\src\\api\\product\\services"
   ],
-  "SelectedNode": "\\src\\api\\category\\services",
+  "SelectedNode": "\\src\\api\\product-texture",
   "PreviewInSolutionExplorer": false
 }
