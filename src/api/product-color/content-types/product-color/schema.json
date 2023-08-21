@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product-color",
     "pluralName": "product-colors",
-    "displayName": "Product-Color"
+    "displayName": "Product-Color",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -17,13 +18,12 @@
       "unique": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true,
-      "private": true
+      ]
     }
   }
 }
