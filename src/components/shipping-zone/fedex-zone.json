@@ -6,9 +6,9 @@
   },
   "options": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     }
   }
