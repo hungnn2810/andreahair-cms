@@ -6,12 +6,12 @@
   },
   "options": {},
   "attributes": {
-    "WeightInKg": {
+    "weightInKg": {
       "type": "decimal",
       "required": true,
       "unique": true
     },
-    "Price": {
+    "price": {
       "type": "decimal",
       "required": true
     }

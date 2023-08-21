@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Zone": {
+    "zone": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::fedex-zone.fedex-zone",
       "inversedBy": "fedex_price"
     },
-    "PriceOfWeight": {
+    "priceOfWeight": {
       "type": "component",
       "repeatable": true,
       "component": "shipping-price.fedex-price"

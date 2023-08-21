@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-21T14:18:32.258Z"
+    "x-generation-date": "2023-08-21T15:44:31.973Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5797,7 +5797,7 @@
           "data": {
             "type": "object",
             "properties": {
-              "Zone": {
+              "zone": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -5808,7 +5808,7 @@
                 ],
                 "example": "string or id"
               },
-              "PriceOfWeight": {
+              "priceOfWeight": {
                 "type": "array",
                 "items": {
                   "$ref": "#/components/schemas/ShippingPriceFedexPriceComponent"
@@ -5867,7 +5867,7 @@
       "FedexPrice": {
         "type": "object",
         "properties": {
-          "Zone": {
+          "zone": {
             "type": "object",
             "properties": {
               "data": {
@@ -5879,10 +5879,10 @@
                   "attributes": {
                     "type": "object",
                     "properties": {
-                      "ZoneCode": {
+                      "zoneCode": {
                         "type": "string"
                       },
-                      "CountriesAndTerritories": {
+                      "countriesAndTerritories": {
                         "type": "array",
                         "items": {
                           "type": "object",
@@ -5908,7 +5908,7 @@
                               "attributes": {
                                 "type": "object",
                                 "properties": {
-                                  "Zone": {
+                                  "zone": {
                                     "type": "object",
                                     "properties": {
                                       "data": {
@@ -5925,7 +5925,7 @@
                                       }
                                     }
                                   },
-                                  "PriceOfWeight": {
+                                  "priceOfWeight": {
                                     "type": "array",
                                     "items": {
                                       "type": "object",
@@ -5933,11 +5933,11 @@
                                         "id": {
                                           "type": "number"
                                         },
-                                        "WeightInKg": {
+                                        "weightInKg": {
                                           "type": "number",
                                           "format": "float"
                                         },
-                                        "Price": {
+                                        "price": {
                                           "type": "number",
                                           "format": "float"
                                         }
@@ -6291,7 +6291,7 @@
               }
             }
           },
-          "PriceOfWeight": {
+          "priceOfWeight": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ShippingPriceFedexPriceComponent"
@@ -6369,11 +6369,11 @@
           "id": {
             "type": "number"
           },
-          "WeightInKg": {
+          "weightInKg": {
             "type": "number",
             "format": "float"
           },
-          "Price": {
+          "price": {
             "type": "number",
             "format": "float"
           }
@@ -6387,15 +6387,15 @@
         "properties": {
           "data": {
             "required": [
-              "ZoneCode",
-              "CountriesAndTerritories"
+              "zoneCode",
+              "countriesAndTerritories"
             ],
             "type": "object",
             "properties": {
-              "ZoneCode": {
+              "zoneCode": {
                 "type": "string"
               },
-              "CountriesAndTerritories": {
+              "countriesAndTerritories": {
                 "type": "array",
                 "items": {
                   "$ref": "#/components/schemas/ShippingZoneFedexZoneComponent"
@@ -6465,14 +6465,14 @@
       "FedexZone": {
         "type": "object",
         "required": [
-          "ZoneCode",
-          "CountriesAndTerritories"
+          "zoneCode",
+          "countriesAndTerritories"
         ],
         "properties": {
-          "ZoneCode": {
+          "zoneCode": {
             "type": "string"
           },
-          "CountriesAndTerritories": {
+          "countriesAndTerritories": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ShippingZoneFedexZoneComponent"
@@ -6490,7 +6490,7 @@
                   "attributes": {
                     "type": "object",
                     "properties": {
-                      "Zone": {
+                      "zone": {
                         "type": "object",
                         "properties": {
                           "data": {
@@ -6502,10 +6502,10 @@
                               "attributes": {
                                 "type": "object",
                                 "properties": {
-                                  "ZoneCode": {
+                                  "zoneCode": {
                                     "type": "string"
                                   },
-                                  "CountriesAndTerritories": {
+                                  "countriesAndTerritories": {
                                     "type": "array",
                                     "items": {
                                       "type": "object",
@@ -6835,7 +6835,7 @@
                           }
                         }
                       },
-                      "PriceOfWeight": {
+                      "priceOfWeight": {
                         "type": "array",
                         "items": {
                           "type": "object",
@@ -6843,11 +6843,11 @@
                             "id": {
                               "type": "number"
                             },
-                            "WeightInKg": {
+                            "weightInKg": {
                               "type": "number",
                               "format": "float"
                             },
-                            "Price": {
+                            "price": {
                               "type": "number",
                               "format": "float"
                             }
