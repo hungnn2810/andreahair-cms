@@ -1,7 +1,8 @@
 {
   "collectionName": "components_orders_items",
   "info": {
-    "displayName": "Item"
+    "displayName": "Order-Details",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,18 +11,25 @@
       "relation": "oneToOne",
       "target": "api::product.product"
     },
-    "quality": {
+    "color": {
       "type": "string",
       "required": true
     },
     "length": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "texture": {
-      "type": "string"
+    "standard": {
+      "type": "string",
+      "required": true
     },
-    "total_payment": {
-      "type": "decimal"
+    "quantity": {
+      "type": "decimal",
+      "required": true
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
     }
   }
 }

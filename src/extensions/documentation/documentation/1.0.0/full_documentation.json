@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-21T17:12:31.787Z"
+    "x-generation-date": "2023-08-22T16:50:58.422Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -25,7 +25,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:1337/api",
+      "url": "http://0.0.0.0:1337/api",
       "description": "Development server"
     }
   ],
@@ -8635,56 +8635,85 @@
         "properties": {
           "data": {
             "required": [
-              "payer_name",
-              "total_amount",
-              "total_payment",
-              "payment_methods",
-              "shipping_address",
-              "shipping_fee",
-              "phone_number",
+              "customer_full_name",
               "email",
-              "status"
+              "phone_number",
+              "address",
+              "city",
+              "country",
+              "delivery_address",
+              "payment_method",
+              "delivery_method",
+              "amount",
+              "discount",
+              "delivery_rate",
+              "paid",
+              "status",
+              "order_details"
             ],
             "type": "object",
             "properties": {
-              "payer_name": {
+              "customer_full_name": {
                 "type": "string"
               },
-              "total_amount": {
-                "type": "number",
-                "format": "float"
-              },
-              "total_payment": {
-                "type": "number",
-                "format": "float"
-              },
-              "payment_methods": {
+              "email": {
                 "type": "string",
-                "enum": [
-                  "PayPal",
-                  "Credit card",
-                  "Contact"
-                ]
-              },
-              "shipping_address": {
-                "type": "string"
-              },
-              "shipping_fee": {
-                "type": "string"
+                "format": "email"
               },
               "phone_number": {
                 "type": "string"
               },
-              "email": {
+              "address": {
                 "type": "string"
               },
-              "region": {
+              "city": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "delivery_address": {
+                "type": "string"
+              },
+              "payment_method": {
+                "type": "string"
+              },
+              "delivery_method": {
+                "type": "string"
+              },
+              "delivery_zone": {
+                "type": "string"
+              },
+              "amount": {
+                "type": "number",
+                "format": "float"
+              },
+              "discount": {
+                "type": "number",
+                "format": "float"
+              },
+              "delivery_rate": {
+                "type": "number",
+                "format": "float"
+              },
+              "paid": {
+                "type": "number",
+                "format": "float"
+              },
+              "transaction_code": {
                 "type": "string"
               },
               "status": {
-                "type": "string"
+                "type": "string",
+                "enum": [
+                  "Waiting Verify Payment",
+                  "Payment Success",
+                  "Payment Not Found",
+                  "Packing",
+                  "Delivering"
+                ]
               },
-              "items": {
+              "order_details": {
                 "type": "array",
                 "items": {
                   "$ref": "#/components/schemas/OrdersItemComponent"
@@ -8743,55 +8772,84 @@
       "Order": {
         "type": "object",
         "required": [
-          "payer_name",
-          "total_amount",
-          "total_payment",
-          "payment_methods",
-          "shipping_address",
-          "shipping_fee",
-          "phone_number",
+          "customer_full_name",
           "email",
-          "status"
+          "phone_number",
+          "address",
+          "city",
+          "country",
+          "delivery_address",
+          "payment_method",
+          "delivery_method",
+          "amount",
+          "discount",
+          "delivery_rate",
+          "paid",
+          "status",
+          "order_details"
         ],
         "properties": {
-          "payer_name": {
+          "customer_full_name": {
             "type": "string"
           },
-          "total_amount": {
-            "type": "number",
-            "format": "float"
-          },
-          "total_payment": {
-            "type": "number",
-            "format": "float"
-          },
-          "payment_methods": {
+          "email": {
             "type": "string",
-            "enum": [
-              "PayPal",
-              "Credit card",
-              "Contact"
-            ]
-          },
-          "shipping_address": {
-            "type": "string"
-          },
-          "shipping_fee": {
-            "type": "string"
+            "format": "email"
           },
           "phone_number": {
             "type": "string"
           },
-          "email": {
+          "address": {
             "type": "string"
           },
-          "region": {
+          "city": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "delivery_address": {
+            "type": "string"
+          },
+          "payment_method": {
+            "type": "string"
+          },
+          "delivery_method": {
+            "type": "string"
+          },
+          "delivery_zone": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "discount": {
+            "type": "number",
+            "format": "float"
+          },
+          "delivery_rate": {
+            "type": "number",
+            "format": "float"
+          },
+          "paid": {
+            "type": "number",
+            "format": "float"
+          },
+          "transaction_code": {
             "type": "string"
           },
           "status": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "Waiting Verify Payment",
+              "Payment Success",
+              "Payment Not Found",
+              "Packing",
+              "Delivering"
+            ]
           },
-          "items": {
+          "order_details": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/OrdersItemComponent"
@@ -10342,16 +10400,20 @@
               }
             }
           },
-          "quality": {
+          "color": {
             "type": "string"
           },
           "length": {
             "type": "string"
           },
-          "texture": {
+          "standard": {
             "type": "string"
           },
-          "total_payment": {
+          "quantity": {
+            "type": "number",
+            "format": "float"
+          },
+          "amount": {
             "type": "number",
             "format": "float"
           }

@@ -12,57 +12,81 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "payer_name": {
+    "customer_full_name": {
       "type": "string",
       "required": true
     },
-    "total_amount": {
-      "type": "decimal",
-      "required": true,
-      "min": 0
-    },
-    "total_payment": {
-      "type": "decimal",
-      "required": true,
-      "min": 0
-    },
-    "payment_methods": {
-      "type": "enumeration",
-      "enum": [
-        "PayPal",
-        "Credit card",
-        "Contact"
-      ],
-      "default": "Contact",
-      "required": true
-    },
-    "shipping_address": {
-      "type": "string",
-      "required": true
-    },
-    "shipping_fee": {
-      "type": "string",
+    "email": {
+      "type": "email",
       "required": true
     },
     "phone_number": {
       "type": "string",
       "required": true
     },
-    "email": {
+    "address": {
       "type": "string",
       "required": true
     },
-    "region": {
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "delivery_address": {
+      "type": "string",
+      "required": true
+    },
+    "payment_method": {
+      "type": "string",
+      "required": true
+    },
+    "delivery_method": {
+      "type": "string",
+      "required": true
+    },
+    "delivery_zone": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "discount": {
+      "type": "decimal",
+      "required": true
+    },
+    "delivery_rate": {
+      "type": "decimal",
+      "required": true
+    },
+    "paid": {
+      "type": "decimal",
+      "required": true
+    },
+    "transaction_code": {
       "type": "string"
     },
     "status": {
-      "type": "string",
-      "required": true
+      "type": "enumeration",
+      "enum": [
+        "Waiting Verify Payment",
+        "Payment Success",
+        "Payment Not Found",
+        "Packing",
+        "Delivering"
+      ],
+      "required": true,
+      "default": "Waiting Verify Payment"
     },
-    "items": {
+    "order_details": {
       "type": "component",
       "repeatable": true,
-      "component": "orders.item"
+      "component": "orders.item",
+      "required": true
     }
   }
 }
