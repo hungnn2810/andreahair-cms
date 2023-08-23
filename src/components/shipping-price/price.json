@@ -9,7 +9,7 @@
     "weightInKg": {
       "type": "decimal",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "price": {
       "type": "decimal",

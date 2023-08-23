@@ -15,7 +15,7 @@
     "zoneCode": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "countriesAndTerritories": {
       "type": "component",
