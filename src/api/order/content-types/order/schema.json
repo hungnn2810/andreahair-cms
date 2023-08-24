@@ -85,7 +85,7 @@
     "order_details": {
       "type": "component",
       "repeatable": true,
-      "component": "orders.item",
+      "component": "order.order-details",
       "required": true
     }
   }
