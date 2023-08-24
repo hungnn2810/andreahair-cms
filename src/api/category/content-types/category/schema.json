@@ -27,6 +27,14 @@
       "relation": "oneToMany",
       "target": "api::category2.category2",
       "mappedBy": "category"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
