@@ -56,10 +56,11 @@
       "target": "api::product-length.product-length",
       "inversedBy": "products"
     },
-    "product_quality": {
+    "product_qualities": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product-quality.product-quality"
+      "relation": "oneToMany",
+      "target": "api::product-quality.product-quality",
+      "mappedBy": "product"
     },
     "product_standards": {
       "type": "relation",
@@ -76,6 +77,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product-origin.product-origin"
+    },
+    "best_selling": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
