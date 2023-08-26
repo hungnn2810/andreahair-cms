@@ -146,18 +146,6 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
-"@bn-digital/strapi-plugin-field-uuid@^1.2.12":
-  version "1.2.12"
-  resolved "https://registry.npmjs.org/@bn-digital/strapi-plugin-field-uuid/-/strapi-plugin-field-uuid-1.2.12.tgz"
-  integrity sha512-SzDxL0YD5F5G2zLmYFcTQ5RT/MlTFgpgvs8IenbPX/u/3PFOI+9EcJ4XH4762PPo9b0EKXRKE+6/+1WNOsmucA==
-  dependencies:
-    "@strapi/design-system" "^1.6.6"
-    "@strapi/helper-plugin" "^4.9.1"
-    "@strapi/icons" "^1.6.6"
-    prop-types "^15.8.1"
-    react-intl "^6.4.0"
-    uuid "^9.0.0"
-
 "@casl/ability@5.4.4", "@casl/ability@^5.4.3":
   version "5.4.4"
   resolved "https://registry.npmjs.org/@casl/ability/-/ability-5.4.4.tgz"
@@ -1218,7 +1206,7 @@
     semver "7.5.4"
     umzug "3.2.1"
 
-"@strapi/design-system@1.8.2", "@strapi/design-system@^1.6.6":
+"@strapi/design-system@1.8.2":
   version "1.8.2"
   resolved "https://registry.npmjs.org/@strapi/design-system/-/design-system-1.8.2.tgz"
   integrity sha512-PBS/F9bCiNbM4hr6AY4QOR+QhxajLvtoJKLIhPfmmPCkPorT46DzvggTveJku/1bWiJmkVHhqytsKEhrvMsjHQ==
@@ -1269,7 +1257,7 @@
     plop "2.7.6"
     pluralize "8.0.0"
 
-"@strapi/helper-plugin@4.12.1", "@strapi/helper-plugin@^4.9.1":
+"@strapi/helper-plugin@4.12.1":
   version "4.12.1"
   resolved "https://registry.npmjs.org/@strapi/helper-plugin/-/helper-plugin-4.12.1.tgz"
   integrity sha512-lCpAk5VH05fO4iaSirNIARXhPjRobSYhPvRDiKHy1UYCNaed8g7XuxuescODl01mcQGYfBD5lUYukLbIv9JbxQ==
@@ -1286,7 +1274,7 @@
     react-query "3.39.3"
     react-select "5.7.0"
 
-"@strapi/icons@1.8.2", "@strapi/icons@^1.6.6":
+"@strapi/icons@1.8.2":
   version "1.8.2"
   resolved "https://registry.npmjs.org/@strapi/icons/-/icons-1.8.2.tgz"
   integrity sha512-FiSYN7bDk7B8nieXLddyRgU3xMWjOcRSL2Q7b8A+pedIDLiIpfrDnsSlzmpVpU7LtQSnkOcDlFHqEXEm7zwIvg==
@@ -1462,6 +1450,14 @@
   version "4.12.1"
   resolved "https://registry.npmjs.org/@strapi/provider-audit-logs-local/-/provider-audit-logs-local-4.12.1.tgz"
   integrity sha512-65T0/J0+CgwqBvwPQn2/UTaQNRf9knT3n2Fs6TKIbtb78CFWXW3GgN09IFmRfOnBJObjD5q2kKdjwQ5OdLUtcQ==
+
+"@strapi/provider-email-nodemailer@^4.12.6":
+  version "4.12.6"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-email-nodemailer/-/provider-email-nodemailer-4.12.6.tgz#7165c37e34bf61e29efbe97ff4582f35172c48c8"
+  integrity sha512-RSmRrjqT02cVbQmPnyutMUQdJEMLZJATGAfTk05OP9v960XoVWGVzI4S3YV4aFzzscGwtKQ7nOrlXKmmdH4wLA==
+  dependencies:
+    lodash "4.17.21"
+    nodemailer "6.9.1"
 
 "@strapi/provider-email-sendmail@4.12.1":
   version "4.12.1"
@@ -6218,6 +6214,11 @@ nodemailer-shared@1.1.0:
   dependencies:
     nodemailer-fetch "1.6.0"
 
+nodemailer@6.9.1:
+  version "6.9.1"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.9.1.tgz#8249d928a43ed85fec17b13d2870c8f758a126ed"
+  integrity sha512-qHw7dOiU5UKNnQpXktdgQ1d3OFgRAekuvbJLcdG5dnEo/GtcTHRYM7+UfJARdOFU9WUQO8OiIamgWPmiSFHYAA==
+
 noms@0.0.0:
   version "0.0.0"
   resolved "https://registry.npmjs.org/noms/-/noms-0.0.0.tgz"
@@ -6984,7 +6985,7 @@ react-helmet@^6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
-react-intl@6.4.1, react-intl@^6.4.0:
+react-intl@6.4.1:
   version "6.4.1"
   resolved "https://registry.npmjs.org/react-intl/-/react-intl-6.4.1.tgz"
   integrity sha512-/aT5595AEMZ+Pjmt8W2R5/ZkYJmyyd6jTzHzqhJ1LnfeG36+N5huBtykxYhHqLc1BrIRQ1fTX1orYC0Ej5ojtg==
@@ -8466,11 +8467,6 @@ uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
-
-uuid@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/uuid/-/uuid-9.0.0.tgz"
-  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 v8flags@^2.0.10:
   version "2.1.1"
