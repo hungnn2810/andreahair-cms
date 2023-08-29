@@ -7900,6 +7900,11 @@ std-env@^3.0.1:
   resolved "https://registry.npmjs.org/std-env/-/std-env-3.3.3.tgz"
   integrity sha512-Rz6yejtVyWnVjC1RFvNmYL10kgjC49EOghxWn0RFqlCHGFpQx+Xe7yW3I4ceK1SGrWIGMjD5Kbue8W/udkbMJg==
 
+strapi-plugin-responsive-image@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-responsive-image/-/strapi-plugin-responsive-image-1.1.0.tgz#3ae134b7f80d427fe8b7327b7f0d7d985877c797"
+  integrity sha512-B9yI6rym16dWJ58T/crzDqgx1djpsIDiwcbyMywCTbUMOs6NAw9nVVhufcc9r65ThnbBZOdbLu9q11oM/bzgRA==
+
 stream-chain@2.2.5, stream-chain@^2.2.5:
   version "2.2.5"
   resolved "https://registry.npmjs.org/stream-chain/-/stream-chain-2.2.5.tgz"
