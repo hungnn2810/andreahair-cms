@@ -1,7 +1,8 @@
 {
   "collectionName": "components_order_order_details",
   "info": {
-    "displayName": "Order-Details"
+    "displayName": "Order-Details",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -28,6 +29,13 @@
     "amount": {
       "type": "decimal",
       "required": true
+    },
+    "product_id": {
+      "type": "string",
+      "required": false
+    },
+    "picture_url": {
+      "type": "string"
     }
   }
 }
