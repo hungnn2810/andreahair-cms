@@ -67,9 +67,6 @@
       "type": "decimal",
       "required": true
     },
-    "transaction_code": {
-      "type": "string"
-    },
     "status": {
       "type": "enumeration",
       "enum": [
