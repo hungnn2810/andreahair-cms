@@ -12,16 +12,28 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "zone": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::fedex-zone.fedex-zone",
-      "inversedBy": "fedex_price"
+    "weightInKg": {
+      "type": "decimal",
+      "required": true
     },
-    "priceOfWeight": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shipping-price.fedex-price"
+    "zone_1": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_2": {
+      "type": "decimal"
+    },
+    "zone_3": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_4": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_5": {
+      "type": "biginteger",
+      "required": true
     }
   }
 }

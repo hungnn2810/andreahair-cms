@@ -18,16 +18,8 @@
       "default": "zoneCode"
     },
     "countriesAndTerritories": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shipping-zone.ups",
+      "type": "integer",
       "required": true
-    },
-    "ups_price": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::ups-price.ups-price",
-      "mappedBy": "zone"
     }
   }
 }

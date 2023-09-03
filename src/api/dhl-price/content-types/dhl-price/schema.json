@@ -12,17 +12,53 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "zone": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::dhl-zone.dhl-zone",
-      "inversedBy": "dhl_price"
+    "weightInKg": {
+      "type": "decimal",
+      "required": true
     },
-    "priceOfWeight": {
-      "type": "component",
-      "repeatable": true,
-      "required": true,
-      "component": "shipping-price.price"
+    "zone_1": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_2": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_3": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_4": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_5": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_6": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_7": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_8": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_9": {
+      "type": "decimal",
+      "required": true
+    },
+    "australia": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_10": {
+      "type": "decimal",
+      "required": true
     }
   }
 }

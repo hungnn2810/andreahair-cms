@@ -17,16 +17,8 @@
       "required": true
     },
     "countriesAndTerritories": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shipping-zone.zone",
+      "type": "integer",
       "required": true
-    },
-    "dhl_price": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::dhl-price.dhl-price",
-      "mappedBy": "zone"
     }
   }
 }

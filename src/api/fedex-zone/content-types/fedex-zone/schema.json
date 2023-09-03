@@ -18,16 +18,8 @@
       "unique": false
     },
     "countriesAndTerritories": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shipping-zone.fedex-zone",
+      "type": "integer",
       "required": true
-    },
-    "fedex_price": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::fedex-price.fedex-price",
-      "mappedBy": "zone"
     }
   }
 }

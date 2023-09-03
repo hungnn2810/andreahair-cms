@@ -12,16 +12,48 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "zone": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::ups-zone.ups-zone",
-      "inversedBy": "ups_price"
+    "weightInKg": {
+      "type": "decimal",
+      "required": true
     },
-    "priceOfWeight": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shipping-price.ups",
+    "zone_1": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_2": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_3": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_4": {
+      "type": "decimal"
+    },
+    "zone_5": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_6": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_7": {
+      "type": "decimal"
+    },
+    "zone_8": {
+      "type": "decimal"
+    },
+    "zone_9": {
+      "type": "decimal"
+    },
+    "australia": {
+      "type": "decimal",
+      "required": true
+    },
+    "zone_10": {
+      "type": "decimal",
       "required": true
     }
   }
