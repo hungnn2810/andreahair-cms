@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shipping_price_ups",
+  "info": {
+    "displayName": "UPS"
+  },
+  "options": {},
+  "attributes": {
+    "weightInKg": {
+      "type": "decimal",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

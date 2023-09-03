@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "dhl_zones",
+  "collectionName": "ups_zones",
   "info": {
-    "singularName": "dhl-zone",
-    "pluralName": "dhl-zones",
-    "displayName": "Shipping DHL zone",
+    "singularName": "ups-zone",
+    "pluralName": "ups-zones",
+    "displayName": "Shipping UPS zone",
     "description": ""
   },
   "options": {
@@ -14,18 +14,19 @@
   "attributes": {
     "zoneCode": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "zoneCode"
     },
     "countriesAndTerritories": {
       "type": "component",
       "repeatable": true,
-      "component": "shipping-zone.zone",
+      "component": "shipping-zone.ups",
       "required": true
     },
-    "dhl_price": {
+    "ups_price": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::dhl-price.dhl-price",
+      "target": "api::ups-price.ups-price",
       "mappedBy": "zone"
     }
   }

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "fedex-price",
     "pluralName": "fedex-prices",
-    "displayName": "Fedex-Price",
+    "displayName": "Shipping Fedex price",
     "description": ""
   },
   "options": {

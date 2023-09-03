@@ -4,7 +4,7 @@
   "info": {
     "singularName": "fedex-zone",
     "pluralName": "fedex-zones",
-    "displayName": "Fedex-Zone",
+    "displayName": "Shipping Fedex zone",
     "description": ""
   },
   "options": {

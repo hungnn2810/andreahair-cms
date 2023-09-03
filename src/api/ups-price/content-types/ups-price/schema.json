@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "dhl_prices",
+  "collectionName": "ups_prices",
   "info": {
-    "singularName": "dhl-price",
-    "pluralName": "dhl-prices",
-    "displayName": "Shipping DHL price",
+    "singularName": "ups-price",
+    "pluralName": "ups-prices",
+    "displayName": "Shipping UPS price",
     "description": ""
   },
   "options": {
@@ -15,14 +15,14 @@
     "zone": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::dhl-zone.dhl-zone",
-      "inversedBy": "dhl_price"
+      "target": "api::ups-zone.ups-zone",
+      "inversedBy": "ups_price"
     },
     "priceOfWeight": {
       "type": "component",
       "repeatable": true,
-      "required": true,
-      "component": "shipping-price.price"
+      "component": "shipping-price.ups",
+      "required": true
     }
   }
 }

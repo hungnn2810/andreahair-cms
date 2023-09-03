@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product-quality",
     "pluralName": "product-qualities",
-    "displayName": "Product-Quality"
+    "displayName": "Product quality",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -18,9 +19,9 @@
     },
     "product": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::product.product",
-      "inversedBy": "product_qualities"
+      "mappedBy": "product_quality"
     }
   }
 }

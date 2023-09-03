@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shipping_zone_ups",
+  "info": {
+    "displayName": "UPS",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

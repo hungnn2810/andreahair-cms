@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product-origin",
     "pluralName": "product-origins",
-    "displayName": "Product-Origin"
+    "displayName": "Product origin",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "feedback",
     "pluralName": "feedbacks",
-    "displayName": "Feedback",
+    "displayName": "FeedBack",
     "description": ""
   },
   "options": {
@@ -35,6 +35,20 @@
       "relation": "manyToOne",
       "target": "api::product.product",
       "inversedBy": "feedbacks"
+    },
+    "replyTo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::feedback.feedback",
+      "private": true,
+      "inversedBy": "feed_back"
+    },
+    "feed_back": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::feedback.feedback",
+      "private": true,
+      "inversedBy": "replyTo"
     }
   }
 }
