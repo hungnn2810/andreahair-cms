@@ -12,12 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "zoneCode": {
+    "countriesAndTerritories": {
       "type": "string",
       "required": true,
       "unique": false
     },
-    "countriesAndTerritories": {
+    "zoneCode": {
       "type": "integer",
       "required": true
     }

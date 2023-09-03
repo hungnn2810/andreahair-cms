@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-03T17:20:54.954Z"
+    "x-generation-date": "2023-09-03T17:35:27.022Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5640,15 +5640,15 @@
         "properties": {
           "data": {
             "required": [
-              "zoneCode",
-              "countriesAndTerritories"
+              "countriesAndTerritories",
+              "zoneCode"
             ],
             "type": "object",
             "properties": {
-              "zoneCode": {
+              "countriesAndTerritories": {
                 "type": "string"
               },
-              "countriesAndTerritories": {
+              "zoneCode": {
                 "type": "integer"
               }
             }
@@ -5704,14 +5704,14 @@
       "DhlZone": {
         "type": "object",
         "required": [
-          "zoneCode",
-          "countriesAndTerritories"
+          "countriesAndTerritories",
+          "zoneCode"
         ],
         "properties": {
-          "zoneCode": {
+          "countriesAndTerritories": {
             "type": "string"
           },
-          "countriesAndTerritories": {
+          "zoneCode": {
             "type": "integer"
           },
           "createdAt": {
@@ -6482,15 +6482,15 @@
         "properties": {
           "data": {
             "required": [
-              "zoneCode",
-              "countriesAndTerritories"
+              "countriesAndTerritories",
+              "zoneCode"
             ],
             "type": "object",
             "properties": {
-              "zoneCode": {
+              "countriesAndTerritories": {
                 "type": "string"
               },
-              "countriesAndTerritories": {
+              "zoneCode": {
                 "type": "integer"
               }
             }
@@ -6546,14 +6546,14 @@
       "FedexZone": {
         "type": "object",
         "required": [
-          "zoneCode",
-          "countriesAndTerritories"
+          "countriesAndTerritories",
+          "zoneCode"
         ],
         "properties": {
-          "zoneCode": {
+          "countriesAndTerritories": {
             "type": "string"
           },
-          "countriesAndTerritories": {
+          "zoneCode": {
             "type": "integer"
           },
           "createdAt": {
@@ -20445,15 +20445,15 @@
         "properties": {
           "data": {
             "required": [
-              "zoneCode",
-              "countriesAndTerritories"
+              "countriesAndTerritories",
+              "zoneCode"
             ],
             "type": "object",
             "properties": {
-              "zoneCode": {
+              "countriesAndTerritories": {
                 "type": "string"
               },
-              "countriesAndTerritories": {
+              "zoneCode": {
                 "type": "integer"
               }
             }
@@ -20509,14 +20509,14 @@
       "UpsZone": {
         "type": "object",
         "required": [
-          "zoneCode",
-          "countriesAndTerritories"
+          "countriesAndTerritories",
+          "zoneCode"
         ],
         "properties": {
-          "zoneCode": {
+          "countriesAndTerritories": {
             "type": "string"
           },
-          "countriesAndTerritories": {
+          "zoneCode": {
             "type": "integer"
           },
           "createdAt": {
