@@ -82,6 +82,12 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "product_prices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-price.product-price",
+      "mappedBy": "product"
     }
   }
 }

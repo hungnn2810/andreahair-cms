@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_prices",
+  "info": {
+    "singularName": "product-price",
+    "pluralName": "product-prices",
+    "displayName": "Product price"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "product_prices"
+    },
+    "product_standard": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-standard.product-standard",
+      "inversedBy": "product_prices"
+    },
+    "product_length": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-length.product-length",
+      "inversedBy": "product_prices"
+    },
+    "color_code": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

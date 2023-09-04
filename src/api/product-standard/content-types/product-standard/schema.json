@@ -22,6 +22,12 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "product_standards"
+    },
+    "product_prices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-price.product-price",
+      "mappedBy": "product_standard"
     }
   }
 }
