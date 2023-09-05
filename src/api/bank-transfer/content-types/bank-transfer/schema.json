@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "bank_transfers",
+  "info": {
+    "singularName": "bank-transfer",
+    "pluralName": "bank-transfers",
+    "displayName": "Bank transfer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bank_name": {
+      "type": "string",
+      "required": true
+    },
+    "account_name": {
+      "type": "string",
+      "required": true
+    },
+    "account_number": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
