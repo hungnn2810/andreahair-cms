@@ -25,9 +25,6 @@
         "images"
       ]
     },
-    "pricePerBundle": {
-      "type": "decimal"
-    },
     "description": {
       "type": "richtext",
       "required": true
@@ -87,6 +84,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product-price.product-price",
+      "mappedBy": "product"
+    },
+    "contacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact.contact",
       "mappedBy": "product"
     }
   }
