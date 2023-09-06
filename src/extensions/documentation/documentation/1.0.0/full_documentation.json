@@ -3208,6 +3208,10 @@
                                           }
                                         }
                                       },
+                                      "default_price": {
+                                        "type": "number",
+                                        "format": "float"
+                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -5251,6 +5255,10 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "default_price": {
+                                                    "type": "number",
+                                                    "format": "float"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -7606,6 +7614,10 @@
                             }
                           }
                         }
+                      },
+                      "default_price": {
+                        "type": "number",
+                        "format": "float"
                       },
                       "createdAt": {
                         "type": "string",
@@ -11465,6 +11477,10 @@
                           }
                         }
                       },
+                      "default_price": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -12206,7 +12222,8 @@
               "images",
               "description",
               "colors",
-              "best_selling"
+              "best_selling",
+              "default_price"
             ],
             "type": "object",
             "properties": {
@@ -12352,6 +12369,10 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "default_price": {
+                "type": "number",
+                "format": "float"
               }
             }
           }
@@ -12410,7 +12431,8 @@
           "images",
           "description",
           "colors",
-          "best_selling"
+          "best_selling",
+          "default_price"
         ],
         "properties": {
           "name": {
@@ -14383,6 +14405,10 @@
                                         }
                                       }
                                     },
+                                    "default_price": {
+                                      "type": "number",
+                                      "format": "float"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -14639,6 +14665,10 @@
                 }
               }
             }
+          },
+          "default_price": {
+            "type": "number",
+            "format": "float"
           },
           "createdAt": {
             "type": "string",
@@ -17605,6 +17635,10 @@
                             }
                           }
                         },
+                        "default_price": {
+                          "type": "number",
+                          "format": "float"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -20104,6 +20138,10 @@
                           }
                         }
                       },
+                      "default_price": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -22215,6 +22253,10 @@
                           }
                         }
                       },
+                      "default_price": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -24303,6 +24345,10 @@
                               }
                             }
                           }
+                        },
+                        "default_price": {
+                          "type": "number",
+                          "format": "float"
                         },
                         "createdAt": {
                           "type": "string",
