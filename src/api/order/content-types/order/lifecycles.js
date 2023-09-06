@@ -1,6 +1,6 @@
 module.exports = {
   async afterUpdate(event) {
-    var link = `https://andreahairvn.com/order-details?id=${event.result.uuid}`;
+    const link = `https://andreahairvn.com/order-details?id=${event.result.uuid}`;
     try {
       await strapi
         .plugin("email")
