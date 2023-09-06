@@ -25,7 +25,7 @@
       "min": 1,
       "max": 5,
       "default": 5,
-      "required": true
+      "required": false
     },
     "comment": {
       "type": "text"
@@ -40,14 +40,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::feedback.feedback",
-      "private": true,
       "inversedBy": "feed_back"
     },
     "feed_back": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::feedback.feedback",
-      "private": true,
       "inversedBy": "replyTo"
     }
   }
