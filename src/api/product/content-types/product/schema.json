@@ -91,6 +91,10 @@
       "relation": "oneToMany",
       "target": "api::contact.contact",
       "mappedBy": "product"
+    },
+    "default_price": {
+      "type": "decimal",
+      "required": true
     }
   }
 }

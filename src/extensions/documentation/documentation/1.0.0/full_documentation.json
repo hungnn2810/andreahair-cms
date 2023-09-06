@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-05T14:42:56.536Z"
+    "x-generation-date": "2023-09-05T15:11:46.244Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3208,6 +3208,10 @@
                                           }
                                         }
                                       },
+                                      "default_price": {
+                                        "type": "number",
+                                        "format": "float"
+                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -5251,6 +5255,10 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "default_price": {
+                                                    "type": "number",
+                                                    "format": "float"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -7606,6 +7614,10 @@
                             }
                           }
                         }
+                      },
+                      "default_price": {
+                        "type": "number",
+                        "format": "float"
                       },
                       "createdAt": {
                         "type": "string",
@@ -11467,6 +11479,10 @@
                           }
                         }
                       },
+                      "default_price": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -12208,7 +12224,8 @@
               "images",
               "description",
               "colors",
-              "best_selling"
+              "best_selling",
+              "default_price"
             ],
             "type": "object",
             "properties": {
@@ -12354,6 +12371,10 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "default_price": {
+                "type": "number",
+                "format": "float"
               }
             }
           }
@@ -12412,7 +12433,8 @@
           "images",
           "description",
           "colors",
-          "best_selling"
+          "best_selling",
+          "default_price"
         ],
         "properties": {
           "name": {
@@ -14385,6 +14407,10 @@
                                         }
                                       }
                                     },
+                                    "default_price": {
+                                      "type": "number",
+                                      "format": "float"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -14641,6 +14667,10 @@
                 }
               }
             }
+          },
+          "default_price": {
+            "type": "number",
+            "format": "float"
           },
           "createdAt": {
             "type": "string",
@@ -17607,6 +17637,10 @@
                             }
                           }
                         },
+                        "default_price": {
+                          "type": "number",
+                          "format": "float"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -20106,6 +20140,10 @@
                           }
                         }
                       },
+                      "default_price": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -22217,6 +22255,10 @@
                           }
                         }
                       },
+                      "default_price": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -24305,6 +24347,10 @@
                               }
                             }
                           }
+                        },
+                        "default_price": {
+                          "type": "number",
+                          "format": "float"
                         },
                         "createdAt": {
                           "type": "string",
