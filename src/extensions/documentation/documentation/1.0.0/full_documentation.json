@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-06T17:03:58.618Z"
+    "x-generation-date": "2023-09-07T15:12:55.719Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2368,6 +2368,9 @@
                                                         }
                                                       }
                                                     },
+                                                    "mention": {
+                                                      "type": "string"
+                                                    },
                                                     "createdAt": {
                                                       "type": "string",
                                                       "format": "date-time"
@@ -4415,6 +4418,9 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "mention": {
+                                                                  "type": "string"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -6774,6 +6780,9 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "mention": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -9535,6 +9544,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "mention": {
+                "type": "string"
               }
             }
           }
@@ -10637,6 +10649,9 @@
                                         }
                                       }
                                     },
+                                    "mention": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -11562,6 +11577,9 @@
                 }
               }
             }
+          },
+          "mention": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -13564,6 +13582,9 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "mention": {
+                                                    "type": "string"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -16795,6 +16816,9 @@
                                           }
                                         }
                                       },
+                                      "mention": {
+                                        "type": "string"
+                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -19298,6 +19322,9 @@
                                         }
                                       }
                                     },
+                                    "mention": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -21413,6 +21440,9 @@
                                         }
                                       }
                                     },
+                                    "mention": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -23505,6 +23535,9 @@
                                             }
                                           }
                                         }
+                                      },
+                                      "mention": {
+                                        "type": "string"
                                       },
                                       "createdAt": {
                                         "type": "string",
