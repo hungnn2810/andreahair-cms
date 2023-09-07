@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-06T17:03:58.618Z"
+    "x-generation-date": "2023-09-06T17:23:52.767Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2334,7 +2334,7 @@
                                                         }
                                                       }
                                                     },
-                                                    "replyTo": {
+                                                    "reply_to": {
                                                       "type": "object",
                                                       "properties": {
                                                         "data": {
@@ -2351,18 +2351,21 @@
                                                         }
                                                       }
                                                     },
-                                                    "feed_back": {
+                                                    "feed_backs": {
                                                       "type": "object",
                                                       "properties": {
                                                         "data": {
-                                                          "type": "object",
-                                                          "properties": {
-                                                            "id": {
-                                                              "type": "number"
-                                                            },
-                                                            "attributes": {
-                                                              "type": "object",
-                                                              "properties": {}
+                                                          "type": "array",
+                                                          "items": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                              "id": {
+                                                                "type": "number"
+                                                              },
+                                                              "attributes": {
+                                                                "type": "object",
+                                                                "properties": {}
+                                                              }
                                                             }
                                                           }
                                                         }
@@ -4382,7 +4385,7 @@
                                                                     }
                                                                   }
                                                                 },
-                                                                "replyTo": {
+                                                                "reply_to": {
                                                                   "type": "object",
                                                                   "properties": {
                                                                     "data": {
@@ -4399,18 +4402,21 @@
                                                                     }
                                                                   }
                                                                 },
-                                                                "feed_back": {
+                                                                "feed_backs": {
                                                                   "type": "object",
                                                                   "properties": {
                                                                     "data": {
-                                                                      "type": "object",
-                                                                      "properties": {
-                                                                        "id": {
-                                                                          "type": "number"
-                                                                        },
-                                                                        "attributes": {
-                                                                          "type": "object",
-                                                                          "properties": {}
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "id": {
+                                                                            "type": "number"
+                                                                          },
+                                                                          "attributes": {
+                                                                            "type": "object",
+                                                                            "properties": {}
+                                                                          }
                                                                         }
                                                                       }
                                                                     }
@@ -6741,7 +6747,7 @@
                                         }
                                       }
                                     },
-                                    "replyTo": {
+                                    "reply_to": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
@@ -6758,18 +6764,21 @@
                                         }
                                       }
                                     },
-                                    "feed_back": {
+                                    "feed_backs": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
-                                          "type": "object",
-                                          "properties": {
-                                            "id": {
-                                              "type": "number"
-                                            },
-                                            "attributes": {
-                                              "type": "object",
-                                              "properties": {}
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "attributes": {
+                                                "type": "object",
+                                                "properties": {}
+                                              }
                                             }
                                           }
                                         }
@@ -9514,7 +9523,7 @@
                 ],
                 "example": "string or id"
               },
-              "replyTo": {
+              "reply_to": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -9525,16 +9534,19 @@
                 ],
                 "example": "string or id"
               },
-              "feed_back": {
-                "oneOf": [
-                  {
-                    "type": "integer"
-                  },
-                  {
-                    "type": "string"
-                  }
-                ],
-                "example": "string or id"
+              "feed_backs": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
               }
             }
           }
@@ -10603,7 +10615,7 @@
                                         }
                                       }
                                     },
-                                    "replyTo": {
+                                    "reply_to": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
@@ -10620,18 +10632,21 @@
                                         }
                                       }
                                     },
-                                    "feed_back": {
+                                    "feed_backs": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
-                                          "type": "object",
-                                          "properties": {
-                                            "id": {
-                                              "type": "number"
-                                            },
-                                            "attributes": {
-                                              "type": "object",
-                                              "properties": {}
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "attributes": {
+                                                "type": "object",
+                                                "properties": {}
+                                              }
                                             }
                                           }
                                         }
@@ -11529,7 +11544,7 @@
               }
             }
           },
-          "replyTo": {
+          "reply_to": {
             "type": "object",
             "properties": {
               "data": {
@@ -11546,18 +11561,21 @@
               }
             }
           },
-          "feed_back": {
+          "feed_backs": {
             "type": "object",
             "properties": {
               "data": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "number"
-                  },
-                  "attributes": {
-                    "type": "object",
-                    "properties": {}
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "attributes": {
+                      "type": "object",
+                      "properties": {}
+                    }
                   }
                 }
               }
@@ -13531,7 +13549,7 @@
                                                       }
                                                     }
                                                   },
-                                                  "replyTo": {
+                                                  "reply_to": {
                                                     "type": "object",
                                                     "properties": {
                                                       "data": {
@@ -13548,18 +13566,21 @@
                                                       }
                                                     }
                                                   },
-                                                  "feed_back": {
+                                                  "feed_backs": {
                                                     "type": "object",
                                                     "properties": {
                                                       "data": {
-                                                        "type": "object",
-                                                        "properties": {
-                                                          "id": {
-                                                            "type": "number"
-                                                          },
-                                                          "attributes": {
-                                                            "type": "object",
-                                                            "properties": {}
+                                                        "type": "array",
+                                                        "items": {
+                                                          "type": "object",
+                                                          "properties": {
+                                                            "id": {
+                                                              "type": "number"
+                                                            },
+                                                            "attributes": {
+                                                              "type": "object",
+                                                              "properties": {}
+                                                            }
                                                           }
                                                         }
                                                       }
@@ -16761,7 +16782,7 @@
                                           }
                                         }
                                       },
-                                      "replyTo": {
+                                      "reply_to": {
                                         "type": "object",
                                         "properties": {
                                           "data": {
@@ -16778,18 +16799,21 @@
                                           }
                                         }
                                       },
-                                      "feed_back": {
+                                      "feed_backs": {
                                         "type": "object",
                                         "properties": {
                                           "data": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "number"
-                                              },
-                                              "attributes": {
-                                                "type": "object",
-                                                "properties": {}
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "number"
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {}
+                                                }
                                               }
                                             }
                                           }
@@ -19264,7 +19288,7 @@
                                         }
                                       }
                                     },
-                                    "replyTo": {
+                                    "reply_to": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
@@ -19281,18 +19305,21 @@
                                         }
                                       }
                                     },
-                                    "feed_back": {
+                                    "feed_backs": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
-                                          "type": "object",
-                                          "properties": {
-                                            "id": {
-                                              "type": "number"
-                                            },
-                                            "attributes": {
-                                              "type": "object",
-                                              "properties": {}
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "attributes": {
+                                                "type": "object",
+                                                "properties": {}
+                                              }
                                             }
                                           }
                                         }
@@ -21379,7 +21406,7 @@
                                         }
                                       }
                                     },
-                                    "replyTo": {
+                                    "reply_to": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
@@ -21396,18 +21423,21 @@
                                         }
                                       }
                                     },
-                                    "feed_back": {
+                                    "feed_backs": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
-                                          "type": "object",
-                                          "properties": {
-                                            "id": {
-                                              "type": "number"
-                                            },
-                                            "attributes": {
-                                              "type": "object",
-                                              "properties": {}
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "attributes": {
+                                                "type": "object",
+                                                "properties": {}
+                                              }
                                             }
                                           }
                                         }
@@ -23472,7 +23502,7 @@
                                           }
                                         }
                                       },
-                                      "replyTo": {
+                                      "reply_to": {
                                         "type": "object",
                                         "properties": {
                                           "data": {
@@ -23489,18 +23519,21 @@
                                           }
                                         }
                                       },
-                                      "feed_back": {
+                                      "feed_backs": {
                                         "type": "object",
                                         "properties": {
                                           "data": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "number"
-                                              },
-                                              "attributes": {
-                                                "type": "object",
-                                                "properties": {}
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "number"
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {}
+                                                }
                                               }
                                             }
                                           }
