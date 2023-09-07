@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-07T16:59:51.728Z"
+    "x-generation-date": "2023-09-07T17:01:53.317Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -25785,9 +25785,6 @@
               "email": {
                 "type": "string",
                 "format": "email"
-              },
-              "uuid": {
-                "type": "string"
               }
             }
           }
@@ -25848,9 +25845,6 @@
           "email": {
             "type": "string",
             "format": "email"
-          },
-          "uuid": {
-            "type": "string"
           },
           "createdAt": {
             "type": "string",
