@@ -34,17 +34,17 @@
       "target": "api::product.product",
       "inversedBy": "feedbacks"
     },
-    "replyTo": {
+    "reply_to": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::feedback.feedback",
-      "inversedBy": "feed_back"
+      "inversedBy": "feed_backs"
     },
-    "feed_back": {
+    "feed_backs": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::feedback.feedback",
-      "inversedBy": "replyTo"
+      "mappedBy": "reply_to"
     },
     "mention": {
       "type": "string"
