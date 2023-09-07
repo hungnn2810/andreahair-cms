@@ -22,9 +22,7 @@
     },
     "rating": {
       "type": "integer",
-      "min": 1,
       "max": 5,
-      "default": 5,
       "required": false
     },
     "comment": {
@@ -36,17 +34,20 @@
       "target": "api::product.product",
       "inversedBy": "feedbacks"
     },
-    "reply_to": {
+    "replyTo": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::feedback.feedback",
-      "inversedBy": "feed_backs"
+      "inversedBy": "feed_back"
     },
-    "feed_backs": {
+    "feed_back": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::feedback.feedback",
-      "mappedBy": "reply_to"
+      "inversedBy": "replyTo"
+    },
+    "mention": {
+      "type": "string"
     }
   }
 }
