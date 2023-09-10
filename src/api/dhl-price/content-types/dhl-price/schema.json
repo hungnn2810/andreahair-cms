@@ -52,10 +52,6 @@
       "type": "decimal",
       "required": true
     },
-    "australia": {
-      "type": "decimal",
-      "required": true
-    },
     "zone_10": {
       "type": "decimal",
       "required": true

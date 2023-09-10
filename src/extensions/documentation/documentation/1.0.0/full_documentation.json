@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-07T17:01:53.317Z"
+    "x-generation-date": "2023-09-10T03:06:02.920Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7769,7 +7769,6 @@
               "zone_7",
               "zone_8",
               "zone_9",
-              "australia",
               "zone_10"
             ],
             "type": "object",
@@ -7811,10 +7810,6 @@
                 "format": "float"
               },
               "zone_9": {
-                "type": "number",
-                "format": "float"
-              },
-              "australia": {
                 "type": "number",
                 "format": "float"
               },
@@ -7885,7 +7880,6 @@
           "zone_7",
           "zone_8",
           "zone_9",
-          "australia",
           "zone_10"
         ],
         "properties": {
@@ -7926,10 +7920,6 @@
             "format": "float"
           },
           "zone_9": {
-            "type": "number",
-            "format": "float"
-          },
-          "australia": {
             "type": "number",
             "format": "float"
           },
