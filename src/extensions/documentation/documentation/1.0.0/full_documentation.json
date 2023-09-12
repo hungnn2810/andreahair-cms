@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-10T03:06:02.920Z"
+    "x-generation-date": "2023-09-12T14:04:46.650Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -11746,6 +11746,10 @@
               },
               "uuid": {
                 "type": "string"
+              },
+              "paypal_fee": {
+                "type": "number",
+                "format": "float"
               }
             }
           }
@@ -11882,6 +11886,10 @@
           },
           "uuid": {
             "type": "string"
+          },
+          "paypal_fee": {
+            "type": "number",
+            "format": "float"
           },
           "createdAt": {
             "type": "string",
