@@ -23,6 +23,9 @@
     "account_number": {
       "type": "string",
       "required": true
+    },
+    "free_text": {
+      "type": "text"
     }
   }
 }
